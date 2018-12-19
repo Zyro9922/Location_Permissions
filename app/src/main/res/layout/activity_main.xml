@@ -16,6 +16,15 @@
         android:text="get location"
         android:layout_centerHorizontal="true" />
 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+       <ProgressBar
+           android:layout_width="match_parent"
+           android:id="@+id/progressBar"
+           android:visibility="gone"
+           android:layout_height="match_parent" />
     <TextView
         android:layout_marginTop="30dp"
         android:id="@+id/lat"
@@ -36,6 +45,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"/>
+   </LinearLayout>
 
     <Button
         android:id="@+id/nextButton"
@@ -45,5 +55,47 @@
         android:layout_gravity="center"
         android:text="NEXT"
         />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Camera"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_gravity="right|center"
+        android:id="@+id/switchCamera"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Location"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_gravity="right|center"
+            android:id="@+id/switchLocation"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Storage"
+            android:padding="10dp"
 
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_gravity="right|center"
+            android:id="@+id/switchStorage"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 </LinearLayout>
